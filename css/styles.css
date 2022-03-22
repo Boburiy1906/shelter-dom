@@ -71,7 +71,7 @@ a {
 
 .site-logo {
   margin-bottom: 10px;
-font-family: "georgia";
+  font-family: "georgia";
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
@@ -126,7 +126,7 @@ font-family: "georgia";
 .site-hero-title {
   margin-top: 0;
   margin-bottom: 42px;
-    font-weight: 400;
+  font-weight: 400;
   font-size: 44px;
   line-height: 57px;
   color: #fff;
@@ -160,7 +160,47 @@ font-family: "georgia";
   transition: background-color 0.3s ease;
 }
 
-.site-hero-link:hover{
+.site-hero-link:hover {
   background-color: #fff;
 
+}
+
+
+/* SITE-ABOUT */
+
+.site-about {
+  background-color: #fff;
+}
+
+.site-about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 100px;
+}
+
+.site-about-info-box {
+  margin-left: 120px;
+  width: 100%;
+  max-width: 430px;
+}
+
+.site-about-info-heading {
+  margin: 0;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  max-width: 370px;
+}
+
+.site-about-info-text {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4c4c4c;
 }
