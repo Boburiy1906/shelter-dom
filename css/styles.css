@@ -17,6 +17,7 @@ body {
   height: 100%;
   font-family: "arial", sans-serif;
   font-weight: 400;
+  letter-spacing: 0.06em;
 }
 
 img {
@@ -48,7 +49,6 @@ a {
   border: 3px solid #f1cdb3;
   font-size: 17px;
   line-height: 22px;
-  letter-spacing: 0.06em;
   color: #292929;
   transition: background-color 0.3s ease;
   white-space: nowrap;
@@ -85,7 +85,6 @@ a {
   font-family: "georgia";
   font-size: 32px;
   line-height: 110%;
-  letter-spacing: 0.06em;
   color: #f1cdb3;
 }
 
@@ -183,7 +182,6 @@ a {
   font-weight: 400;
   font-size: 35px;
   line-height: 45px;
-  letter-spacing: 0.06em;
   color: #545454;
   max-width: 370px;
 }
@@ -200,7 +198,7 @@ a {
 /* SITE-PRESENTATION */
 
 .site-presentation {
-background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 
 .site-presentation-wrapper {
@@ -209,6 +207,7 @@ background-color: #f6f6f6;
   flex-direction: column;
   align-items: center;
 }
+
 .site-presentation-heading {
   margin-top: 0;
   margin-bottom: 60px;
@@ -219,7 +218,6 @@ background-color: #f6f6f6;
   font-weight: 400;
   font-size: 35px;
   line-height: 45px;
-  letter-spacing: 0.06em;
   color: #545454;
 
 }
@@ -232,51 +230,259 @@ background-color: #f6f6f6;
 }
 
 .site-presentation-card {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-max-width: 270px;
-background-color: #fafafa;
-border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 270px;
+  background-color: #fafafa;
+  border-radius: 9px;
 }
 
-.site-presentation-card:not(:last-of-type){
-margin-right: 90px;
+.site-presentation-card:not(:last-of-type) {
+  margin-right: 90px;
 }
 
 .pet-title {
   margin: 30px 0px 0px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: 0.06em;
-
 }
 
 .site-presentation-card-link {
   margin: 30px;
   background-color: #fafafa;
-  }
+}
 
-.site-presentation-card-link:hover{
-background-color: #f1cdb3;
+.site-presentation-card-link:hover {
+  background-color: #f1cdb3;
 }
 
 
 /* ARROWS */
-.arrow-button{
-border: 0;
-border-radius: 50%;
+.arrow-button {
+  border: 0;
+  border-radius: 50%;
 }
 
-.arrow-left{
-margin-right: 53px;
+.arrow-left {
+  margin-right: 53px;
 }
 
-.arrow-right{
+.arrow-right {
   margin-left: 53px;
-  }
+}
 
-.site-presentation-link {
+
+/* SITE-HELP-US-SECTION */
+
+
+.site-help-us-section {
+  background-color: #fff;
+
+}
+
+.site-help-us-section-global-wrapper {
+  padding: 80px 0 45px;
+  color: #545454;
+}
+
+.site-help-us-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-help-us-section-heading {
+  margin-top: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 338px;
+  text-align: center;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.site-help-us-section-img-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style: none;
+}
+
+.site-help-us-section-img-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+  flex-grow: 1;
+}
+
+.site-help-us-section-img-item:not(:last-of-type) {
+  margin-right: 120px;
+}
+
+.site-help-us-section-img-item-text {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+
+/* SITE-DONATION */
+
+.site-donation {
+  background-color: #f6f6f6;
+  color: #545454;
+  font-family: 'Georgia';
+}
+
+.site-donation-global-wrapper {
+  padding: 80px 0 100px;
+}
+
+.site-donation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.site-donation-info-box {
+  margin-left: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.site-donation-info-box h3,
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.site-donation-info-box-heading {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  max-width: 300px;
+}
+
+.site-donation-info-box-card-name {
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.site-donation-info-box-card-number {
+  background: url(../img/credit-card.svg) center no-repeat;
+  background-position: left 15px center;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 15px;
+  background-color: #f1cdb3;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.site-donation-info-box-card-text {
+  font-family: 'Arial';
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  margin-bottom: 0;
+}
+
+
+
+/* SITE-FOOTER */
+
+
+.site-footer {
+  background: url(../img/footer-puppy.png) center no-repeat, url(../img/footer-background.png) center no-repeat;
+  background-size: auto, 100%;
+  background-position: right 25px bottom, center;
+  font-family: "georgia";
+}
+
+.site-footer-wrapper {
+  padding: 60px 0;
+}
+
+.site-footer-info-wrapper {
+  display: flex;
+}
+
+.site-footer-questions-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer-heading {
+  max-width: 278px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff;
+  margin-top: 0;
+
+}
+
+.site-footer-questions-box-heading {
+  margin-bottom: 40px;
+}
+
+.site-footer-text {
+  padding: 5px 0 5px 60px;
+  max-width: 310px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #f1cdb3;
+}
+
+.site-footer-questions-box-email {
+  background: url(../img/icon-email.svg) center no-repeat;
+  background-size: 40px 32px;
+  background-position: left center;
+  margin-bottom: 40px;
+}
+
+
+.site-footer-questions-box-phone {
+  background: url(../img/icon-phone.svg) center no-repeat;
+  background-position: left center;
+  margin-bottom: 0;
+}
+
+.site-footer-adress-box {
+  margin-left: 160px;
+}
+
+.site-footer-adress-box-heading {
+  margin-bottom: 32px;
+}
+
+.site-footer-questions-box-adress {
+  background: url(../img/icon-marker.svg) center no-repeat;
+  background-position: left center;
+  padding-left: 42px;
+  margin-bottom: 32px;
+}
+
+.site-footer-questions-box-adress:last-child {
+  margin-bottom: 0;
 }
