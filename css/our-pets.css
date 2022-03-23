@@ -237,10 +237,15 @@ a {
   border: none;
   border-radius: 70%;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .button-paginator:not(:last-of-type){
   margin-right: 20px;
+}
+
+.button-paginator:hover{
+  transform: scale(1.1);
 }
 
 
